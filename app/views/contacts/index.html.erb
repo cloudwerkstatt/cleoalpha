@@ -1,14 +1,24 @@
 <h1>Zeige alle Kunden an</h1>
 
+<%= search_form_for @q do |f| %>
+  <%= f.label :name_start %>
+  <%= f.search_field :name_start %>
+  <%= f.label :city_cont %>
+  <%= f.search_field :city_cont %>
+  <%= f.label :email_cont %>
+  <%= f.search_field :email_cont %>
+  <%= f.submit %>
+<% end %>
+
 <table>
   <thead>
     <tr>
-      <th>Name</th>
-      <th>Firstname</th>
-      <th>Street</th>
-      <th>Zip</th>
-      <th>City</th>
-      <th>Country</th>
+      <%= content_tag :th, sort_link(@q, :name) %>
+      <%= content_tag :th, sort_link(@q, :firstname) %>
+      <%= content_tag :th, sort_link(@q, :street) %>
+      <%= content_tag :th, sort_link(@q, :zip) %>
+      <%= content_tag :th, sort_link(@q, :city) %>
+      <%= content_tag :th, sort_link(@q, :country) %>
       <th>Tel</th>
       <th>Email</th>
       <th>Skype uri</th>

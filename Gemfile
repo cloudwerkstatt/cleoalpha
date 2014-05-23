@@ -16,7 +16,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'devise', '3.2.4'
 gem 'paper_trail', '~> 3.0.2'
 gem 'acts-as-taggable-on'
-
+gem "ransack"
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
