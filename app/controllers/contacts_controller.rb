@@ -44,6 +44,7 @@ class ContactsController < ApplicationController
   def update
     respond_to do |format|
       if @contact.update(contact_params)
+
         format.html { redirect_to @contact, notice: 'Contact was successfully updated.' }
         format.json { render :show, status: :ok, location: @contact }
       else
@@ -71,6 +72,6 @@ class ContactsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def contact_params
-      params.require(:contact).permit(:name, :firstname, :street, :zip, :city, :country, :tel, :email, :skype_uri, :lync_uri)
+      params.require(:contact).permit(:name, :firstname, :street, :zip, :city, :country, :tel, :email, :skype_uri, :lync_uri, :tag_list)
     end
 end

@@ -15,6 +15,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # gem 'therubyracer',  platforms: :ruby
 gem 'devise', '3.2.4'
 gem 'paper_trail', '~> 3.0.2'
+gem 'acts-as-taggable-on'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
