@@ -11,6 +11,7 @@ class ContactsController < ApplicationController
   # GET /contacts/1
   # GET /contacts/1.json
   def show
+    @version_count = @contact.versions.length + 1
   end
 
   # GET /contacts/new
