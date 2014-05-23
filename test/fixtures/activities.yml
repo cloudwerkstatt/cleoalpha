@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2014-05-23 17:14:51
+  activity_category_id: 1
+  contact_id: 1
+  PlannedDate: 2014-05-23 17:14:51
+  ProtocolText: MyText
+
+two:
+  date: 2014-05-23 17:14:51
+  activity_category_id: 1
+  contact_id: 1
+  PlannedDate: 2014-05-23 17:14:51
+  ProtocolText: MyText

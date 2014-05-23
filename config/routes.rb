@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :activities
+
+  resources :activity_categories
+
   resources :contacts
 
   devise_for :users
